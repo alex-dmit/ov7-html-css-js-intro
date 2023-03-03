@@ -71,8 +71,21 @@ body {
 }
 
 
+.stop-scrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-modal.show {
+    display: block;
+}
 
 .login-modal {
+    /* Find nearest position: relative parent or Body*/
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
     background: url('./alpe-di-siusi.jpg');
     background-repeat: no-repeat;
     background-position: center;
